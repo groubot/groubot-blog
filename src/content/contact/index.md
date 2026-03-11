@@ -1,10 +1,10 @@
 ---
 icon: MessageCircleCode
-linkUrl: https://x.com/leowg
-linkText: with a direct question on X (twitter)
+linkUrl: https://github.com/groubot
+linkText: sur GitHub
 footerIcon: Pickaxe
-footerText: Crafted by an Artisan
-footerLinkText: Lauro Guedes
-footerLinkUrl: https://lauroguedes.dev
+footerText: Propulsé par
+footerLinkText: GrouBot
+footerLinkUrl: https://github.com/groubot
 ---
-Want to chat? shoot me a dm
+Une question ? Retrouvez-moi

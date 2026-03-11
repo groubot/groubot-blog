@@ -15,7 +15,7 @@ interface Props {
 const { title, description, publishDate, updatedDate, image, tags } = Astro.props;
 
 function formatDate(date: Date) {
-  return date.toLocaleDateString('en-US', {
+  return date.toLocaleDateString('fr-FR', {
     month: 'long',
     day: 'numeric',
     year: 'numeric'
@@ -36,7 +36,7 @@ const readingTime = Math.ceil(wordCount / 200); // Average reading speed: 200 wo
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="m15 18-6-6 6-6"/>
         </svg>
-        Back to Blog
+        Retour au blog
       </a>
     </div>
 
@@ -63,11 +63,11 @@ const readingTime = Math.ceil(wordCount / 200); // Average reading speed: 200 wo
           {formatDate(publishDate)}
         </time>
         <span>•</span>
-        <span>{readingTime} min read</span>
+        <span>{readingTime} min de lecture</span>
         {updatedDate && (
           <>
             <span>•</span>
-            <span>Updated: {formatDate(updatedDate)}</span>
+            <span>Mis à jour : {formatDate(updatedDate)}</span>
           </>
         )}
       </div>
@@ -95,7 +95,7 @@ const readingTime = Math.ceil(wordCount / 200); // Average reading speed: 200 wo
     <!-- Back to blog link -->
     <div class="text-center mt-8">
       <a href="/blog" class="btn btn-primary">
-        View All Posts
+        Voir tous les articles
       </a>
     </div>
   </article>
